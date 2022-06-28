@@ -7,7 +7,7 @@
     <title>Odin Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -16,16 +16,17 @@
             <img src="./photo-1585202900225-6d3ac20a6962.avif" alt="background image" id="bg-img">
             <div class="logo-wrapper">
                 <img src="./odin-lined.png" alt="logo" id="logo-img">
+                <h2>ODIN</h2>
             </div>
         </div>
         <form class="form-wrapper">
-            <p>This is not a real online servie! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem numquam cupiditate, nostrum et omnis expedita dolor enim consectetur excepturi!</p>
+            <p id="lorem">This is not a real online servie! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem numquam cupiditate, nostrum et omnis expedita dolor enim consectetur excepturi!</p>
                 
             
             <div class="input-wrapper">
                 <h4>Lets do this!</h4>
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name" required >
+                <input type="text" name="first-name" id="first-name" required>
                 <label for="last-name">LAST NAME</label>
                 <input type="text" name="last-name" id="last-name" required>
                 <label for="user-email">EMAIL</label>
@@ -37,10 +38,11 @@
                 <label for="confirm-password">CONFIRM PASSWORD</label>
                 <input type="password" name="confirm-password" id="confirm-password">
                 <br >
-                <button type="submit">Create an Account</button>
+                <button type="submit" id="submit-btn">Create an Account</button>
                 <button type="reset">Reset</button>
             </div>
         </form>
+        <p id="login-link">Already have an account? <a href="">Login</a> here</p>
     </div>
     <script src="./app.js"></script>
 </body>

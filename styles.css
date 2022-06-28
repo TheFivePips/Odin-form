@@ -1,3 +1,9 @@
+@font-face {
+    font-family: norse;
+    font-style: bold;
+    src: url(./Norse-Bold.otf)
+}
+
 *{
     font-family: 'Roboto Mono', monospace;
 }
@@ -7,6 +13,10 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
+}
+#lorem{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .img-wrapper{
@@ -25,11 +35,22 @@
     z-index: 1;
     
     position: absolute;
-    width: 200px;
-    height: 210px;
+    width: 150px;
+    height: 130px;
     top: 270px;
     left: 0px;
-    padding: 0px 140px;
+    padding-left: 107px;
+    padding-right: 223px;
+}
+.logo-wrapper h2{
+    position: absolute;
+    top: 200px;
+    left: 260px;
+    color: whitesmoke;
+    font-family: norse;
+    font-size: 100px;
+    z-index: 1;
+   
 }
 
 .form-wrapper{
@@ -53,6 +74,7 @@
     padding: 0px 20px;
     
     display: grid;
+   
 }
 
 .input-wrapper * {
@@ -60,6 +82,14 @@
     margin: 3px 0px;
 }
 
-/* .input-wrapper h4{
-    justify-content: center;
-} */
+
+#submit-btn{
+    color: white;
+    background-color: #596D48;
+}
+
+#login-link{
+    position: absolute;
+    bottom: 75px;
+    right: 350px;
+}

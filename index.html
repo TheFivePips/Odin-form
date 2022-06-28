@@ -25,25 +25,35 @@
             
             <div class="input-wrapper">
                 <h4>Lets do this!</h4>
+
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name" required>
+                <input type="text" name="first-name" 
+                id="first-name" required  maxlength="30">
+
                 <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name" required>
+                <input type="text" name="last-name" id="last-name" required  maxlength="40">
+
                 <label for="user-email">EMAIL</label>
                 <input type="email" name="user-email" id="user-email" required>
+
                 <label for="user-phone">PHONE NUMBER</label>
-                <input type="tel" name="user-phone" id="user-phone">
+                <input type="tel" name="user-phone" id="user-phone" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
                 <label for="user-password">PASSWORD</label>
-                <input type="password" name="user-password" id="user-password" required>
+                <input type="password" name="user-password" id="user-password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+
                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <input type="password" name="confirm-password" id="confirm-password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+
                 <br >
+
                 <button type="submit" id="submit-btn">Create an Account</button>
+
                 <button type="reset">Reset</button>
             </div>
+            <p id="login-link">Already have an account? <a href="">Login</a> here</p>
+        </div>
         </form>
-        <p id="login-link">Already have an account? <a href="">Login</a> here</p>
-    </div>
     <script src="./app.js"></script>
 </body>
 </html>

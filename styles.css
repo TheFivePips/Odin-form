@@ -89,7 +89,17 @@
 }
 
 #login-link{
-    position: absolute;
-    bottom: 75px;
-    right: 350px;
+   grid-area: 4/2;
+   
+}
+
+
+
+
+input:focus:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
 }
